@@ -25,8 +25,14 @@ python verify_rank_reductions.py --milp
 ```
 
 
-With SymPy installed, run the arithmetic checks for Remark 3.3. They verify irreducibility and the Galois group of the quintic, count its real roots, determine both fixed points of the fifth iterate of the Möbius map, and reconstruct both five-cycle Gram decompositions.
+With SymPy installed, run the arithmetic checks for the arithmetic examples in the manuscript. They verify irreducibility and the Galois group of the quintic, count its real roots, determine both fixed points of the fifth iterate of the Möbius map, and reconstruct both five-cycle Gram decompositions.
 
 ```sh
 python verify.py --algebra
 ```
+
+## Ordered private summands and Figure 1
+
+Run `python check_private_order.py` to compare two shortest decompositions of the same rectangular matrix. It checks both complete lifts and the order of all 96 private summands using trace-normalized diagonal entries. Run `python make_figure_collapse.py` with Matplotlib to regenerate `fig_collapse.pdf`.
+
+The optional Latin-square examples document related computations from earlier versions. The public code snapshot for this manuscript is [paper-2026-11-24](https://github.com/chineseschrodingercat/cp-factorization-verification/tree/paper-2026-11-24).
